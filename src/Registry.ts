@@ -35,7 +35,7 @@ export class Registry {
 
   private privilege: PrivilegeManager;
 
-  constructor(opts: { privilegeManager: PrivilegeManager }) {
+  constructor(opts: RegistryOptions) {
     this.privilege = opts.privilegeManager;
     return setSingletonCommands(this);
   }
@@ -278,4 +278,8 @@ interface RegistryData {
     admin: boolean;
   }[];
   contextMenus: Map<string, ContextMenuInformation>;
+}
+
+export interface RegistryOptions {
+  privilegeManager: PrivilegeManager;
 }

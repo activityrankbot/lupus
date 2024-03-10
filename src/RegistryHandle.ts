@@ -3,15 +3,15 @@ import {
   type RESTPostAPIApplicationCommandsResult,
   Routes,
 } from 'discord.js';
-import { ComponentRegistry, Registry } from './index.js';
+import { ComponentRegistry, Registry, type RegistryOptions } from './index.js';
 import { opendir } from 'node:fs/promises';
 import { join as joinpath } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export class RegistryHandle extends Registry {
   private componentRegistry: ComponentRegistry;
-  constructor() {
-    super();
+  constructor(opts: RegistryOptions) {
+    super(opts);
     this.componentRegistry = new ComponentRegistry();
   }
 
