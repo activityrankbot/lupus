@@ -1,5 +1,5 @@
 import { REST } from 'discord.js';
-import { amber } from '../../../src/index.js';
+import { amber } from '../../src/index.js';
 
 const handle = amber();
 await handle.walkDirectories(new URL('./commands', import.meta.url));

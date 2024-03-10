@@ -1,7 +1,7 @@
 import { Client, Events } from 'discord.js';
-import { amber } from '../../../dist/index.js';
+import { amber, PrivilegeManager } from '../../dist/index.js';
 
-const handle = amber();
+const handle = amber({ privilegeManager: new PrivilegeManager({}) });
 await handle.walkDirectories(new URL('./commands', import.meta.url));
 
 const client = new Client({ intents: [] });

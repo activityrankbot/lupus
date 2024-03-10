@@ -1,4 +1,4 @@
-import { commands, components } from '../../../../dist/index.js';
+import { commands, components } from '../../../dist/index.js';
 
 commands.registerCommand({
   data: { name: 'ping', description: 'pings' },

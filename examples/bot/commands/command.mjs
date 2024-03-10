@@ -1,4 +1,4 @@
-import { commands, components } from '../../../../dist/index.js';
+import { commands, components } from '../../../dist/index.js';
 
 const sc = commands.generateSubcommand({
   name: 'sub',
