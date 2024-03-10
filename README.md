@@ -17,3 +17,8 @@ ActivityRank is a Discord bot focusing on flexible statistics and ranking.
 This repository hosts the command handler powering ActivityRank's internal command setup.
 
 See the [examples](./examples/) folder for demonstrations of how the handler can be used.
+
+## A note on semantic versioning
+
+This package is currently in _initial development_.
+This means that increments of the minor (x.**y**.z) version **may be breaking**.
